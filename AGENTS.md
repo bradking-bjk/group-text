@@ -25,9 +25,11 @@ Run lint and typecheck before declaring any task done.
 
 ## Navigation & Routing
 
-- Use **Expo Router** for all navigation. Routes live in `src/app/` — every file there is a screen, `_layout.tsx` files define navigators. Keep non-route code (components, hooks, utils) outside `src/app/`.
-- Import `Link`, `router`, and `useLocalSearchParams` from `expo-router`.
-- Docs: https://docs.expo.dev/router/introduction.md
+- This project intentionally uses a tiny custom stack navigator in `src/nav.tsx` (no Expo Router) to keep dependencies minimal. Add a screen by extending the `Route` union and the switch in `App.tsx`.
+
+## Native SMS module
+
+- `modules/sms-gateway` is a local Expo module, Android only. Keep `Phone.kt` and `src/lib/phone.ts` in sync.
 
 ## Building with EAS
 
