@@ -91,7 +91,7 @@ npx expo run:ios       # macOS with Xcode
 ```
 
 Before publishing your own build, change `android.package` and `ios.bundleIdentifier` in
-`app.json` from `org.example.grouptext` to an identifier you own.
+`app.json` from `com.twopavilions.grouptext` to an identifier you own.
 
 ### First run on Android
 
